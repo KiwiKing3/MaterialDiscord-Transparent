@@ -1,0 +1,42 @@
+/**
+ * @name Material Discord Transparent Neutral
+ * @author KiwiKing3 & Copilot
+ * @version 1.0.3
+ * @description Neutral transparent background (no color tint) for the Material Discord Theme.
+ * @base-theme Material Discord by CapnKitten
+ */
+
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css);
+
+/* Neutral black for dark theme */
+.theme-dark {
+  --app-bg: rgba(0,0,0,0.25) !important;
+  --main-color: rgba(0,0,0,0.25) !important;
+  --main-alt: rgba(0,0,0,0.25) !important;
+  --server-color: rgba(0,0,0,0.22) !important;
+  --status-picker-color: rgba(0,0,0,0.22) !important;
+  --sidebar-panel-color: rgba(0,0,0,0.22) !important;
+  --chat-color: rgba(0,0,0,0.25) !important;
+  --message-color: rgba(0,0,0,0.18) !important;
+}
+
+/* Neutral white for light theme */
+.theme-light {
+  --app-bg: rgba(255,255,255,0.25) !important;
+  --main-color: rgba(255,255,255,0.25) !important;
+  --main-alt: rgba(255,255,255,0.25) !important;
+  --server-color: rgba(255,255,255,0.22) !important;
+  --status-picker-color: rgba(255,255,255,0.22) !important;
+  --sidebar-panel-color: rgba(255,255,255,0.22) !important;
+  --chat-color: rgba(255,255,255,0.25) !important;
+  --message-color: rgba(255,255,255,0.18) !important;
+}
+
+/* Fallback for main containers */
+.appMount-3VJmYg,
+.bg-1QIAus,
+.container-1eFT6A,
+.layers-3iHuyZ {
+  background: var(--app-bg, rgba(0,0,0,0.25)) !important;
+  background-color: var(--app-bg, rgba(0,0,0,0.25)) !important;
+}
